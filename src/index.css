@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  :root{
-    @apply scroll-smooth m-0
+  :root {
+    @apply scroll-smooth m-0;
   }
-  
 }

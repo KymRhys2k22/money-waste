@@ -9,8 +9,10 @@ import {
 const App = () => {
   return (
     <>
-      <Header />
-      <Nav />
+      <Header>
+        <Nav/>
+      </Header>
+      
       <Main />
       <Footer />
 
