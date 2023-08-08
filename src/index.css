@@ -21,4 +21,8 @@
   p{
     @apply font-Lexend font-light
   }
+
+  .cta{
+    @apply transition ease-in-out delay-100 hover:-translate-y-0.5 hover:text-accent-100   
+  }
 }
