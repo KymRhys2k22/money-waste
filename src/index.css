@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,5 +7,18 @@
 @layer base {
   :root {
     @apply scroll-smooth m-0;
+  }
+  h1{
+    @apply font-Lexend font-bold
+  }
+  h2{
+    @apply font-Lexend font-semibold
+  }
+  h3{
+    @apply font-Lexend font-medium
+  }
+
+  p{
+    @apply font-Lexend font-light
   }
 }
