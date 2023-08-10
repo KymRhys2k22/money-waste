@@ -4,15 +4,15 @@ import {
   Header,
   Main,
   Nav
-} from './Component'
+} from './component'
 
 const App = () => {
   return (
     <>
       <Header>
-        <Nav/>
+        <Nav />
       </Header>
-      
+
       <Main />
       <Footer />
 
