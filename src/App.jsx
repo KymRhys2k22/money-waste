@@ -4,7 +4,7 @@ import {
   Header,
   Main,
   Nav
-} from './component'
+} from './Component'
 
 const App = () => {
   return (
