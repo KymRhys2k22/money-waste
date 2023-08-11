@@ -12,7 +12,7 @@ const Header = () => {
         closed: { opacity: 0, x: "100%" },
     }
     return (
-        <header id='home' className='w-full bg-bg-200 py-2 fixed z-50 '>
+        <header className='w-full bg-bg-200 py-2 fixed z-50 '>
             <Nav toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
             <m.div op animate={toggleMenu ? "open" : "closed"} variants={variants} className='w-screen mt-2 h-screen fixed bg-bg-300 flex flex-col sm:hidden items-end pr-10 pt-10'>
                 <ul >
