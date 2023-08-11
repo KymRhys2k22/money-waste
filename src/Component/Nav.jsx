@@ -1,11 +1,17 @@
 import React from 'react'
 import Logo from '../Assets/Logo.png'
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { FaTiktok } from "react-icons/fa"
 import { navbarText } from '../utils/data'
+import useScrollPosition from '../utils/useScrollPosition';
 
 
-const Nav = () => {
+const Nav = ({ toggleMenu, setToggleMenu }) => {
+  const toggle = () => {
+    setToggleMenu(!toggleMenu)
+  }
+
+
   return (
     <nav className=' max-w-[900px]  w-[90%] max-sm:w-[98%] flex mx-auto items-center justify-between'>
 
@@ -27,7 +33,7 @@ const Nav = () => {
         </a>
       </div>
       <h1 className='sm:hidden  text-primary-100 uppercase'>Money Waste Clothing Co.</h1>
-      <RxHamburgerMenu size='42' className='sm:hidden text-text-200' />
+      {toggleMenu ? <RxCross1 onClick={toggle} size='38' className='sm:hidden mr-2 text-text-200 cursor-pointer' /> : <RxHamburgerMenu onClick={toggle} size='38' className='sm:hidden mr-2 text-text-200 cursor-pointer' />}
     </nav>
   )
 }

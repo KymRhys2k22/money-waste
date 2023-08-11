@@ -9,6 +9,7 @@ import img8 from '../Assets/mny (8).jpg'
 import img9 from '../Assets/mny (9).jpg'
 
 
+
 export const navbarText = [
     {
         'name': 'Home',
@@ -26,44 +27,93 @@ export const navbarText = [
         'name': 'Contact',
         'link': '#contact'
     },
+
 ]
+
+const background = 'bg-text-200'
 
 
 export const picture = [
     {
+        'id': 1,
+        'text': 'text-bg-300',
+        'bg': background,
+        'left': 'text-right',
+        'flexRow': 'flex-row-reverse',
         'imageLink': img1,
-        'description': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi explicabo cum est eos itaque possimus amet saepe voluptate officia maxime quod, sed tempore placeat quisquam! Nam possimus ex deserunt accusantium!'
+        'description': 'Where Art Meets Fashion, Money Waste Unveiled'
     },
     {
+
+        'id': 2,
+        'text': '',
+        'bg': '',
+        'left': '',
+        'flexRow': '',
         'imageLink': img2,
-        'description': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi explicabo cum est eos itaque possimus amet saepe voluptate officia maxime quod, sed tempore placeat quisquam! Nam possimus ex deserunt accusantium!'
+        'description': 'Draped in Culture, Drenched in Style. Money Waste Chronicles.'
     },
     {
+        'id': 3,
+        'text': 'text-bg-300',
+        'bg': background,
+        'left': 'text-right',
+        'flexRow': 'flex-row-reverse',
         'imageLink': img3,
-        'description': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi explicabo cum est eos itaque possimus amet saepe voluptate officia maxime quod, sed tempore placeat quisquam! Nam possimus ex deserunt accusantium!'
+        'description': 'Embrace the Bold, Embody the Streets. Money Waste Originals.'
     },
     {
+        'id': 4,
+        'text': '',
+        'bg': '',
+        'left': '',
+        'flexRow': '',
         'imageLink': img4,
-        'description': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi explicabo cum est eos itaque possimus amet saepe voluptate officia maxime quod, sed tempore placeat quisquam! Nam possimus ex deserunt accusantium!'
+        'description': 'Artistry in Motion, Money Waste Street Stories.'
     },
     {
+        'id': 5,
+        'text': 'text-bg-300',
+        'bg': background,
+        'left': 'text-right',
+        'flexRow': 'flex-row-reverse',
         'imageLink': img5,
-        'description': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi explicabo cum est eos itaque possimus amet saepe voluptate officia maxime quod, sed tempore placeat quisquam! Nam possimus ex deserunt accusantium!'
+        'description': 'Wear the Attitude, Rock the Streets. Money Waste Clothing Co'
     },
     {
+        'id': 6,
+        'text': '',
+        'bg': '',
+        'left': '',
+        'flexRow': '',
         'imageLink': img6,
-        'description': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi explicabo cum est eos itaque possimus amet saepe voluptate officia maxime quod, sed tempore placeat quisquam! Nam possimus ex deserunt accusantium!'
+        'description': 'Bigger Style, Bolder Statement. Discover Money Waste.'
     },
     {
+        'id': 7,
+        'text': 'text-bg-300',
+        'bg': background,
+        'left': 'text-right',
+        'flexRow': 'flex-row-reverse',
         'imageLink': img7,
-        'description': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi explicabo cum est eos itaque possimus amet saepe voluptate officia maxime quod, sed tempore placeat quisquam! Nam possimus ex deserunt accusantium!'
+        'description': 'Graffiti Threads, Unleash Your Vibe. Money Waste Clothing Co.'
     },
     {
+        'id': 8,
+        'text': '',
+        'bg': '',
+        'left': '',
+        'flexRow': '',
         'imageLink': img8,
-        'description': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi explicabo cum est eos itaque possimus amet saepe voluptate officia maxime quod, sed tempore placeat quisquam! Nam possimus ex deserunt accusantium!'
+        'description': 'Oversized Passion, Street Art Fashion. Money Waste Unleashed.'
     },
     {
+        'id': 9,
+        'text': 'text-bg-300',
+        'bg': background,
+        'left': 'text-right',
+        'flexRow': 'flex-row-reverse',
         'imageLink': img9,
-        'description': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi explicabo cum est eos itaque possimus amet saepe voluptate officia maxime quod, sed tempore placeat quisquam! Nam possimus ex deserunt accusantium!'
+        'description': 'Streetwear Redefined, Creativity Unleashed. Money Waste Vibes.'
     },
 ]

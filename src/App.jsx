@@ -3,15 +3,19 @@ import {
   Footer,
   Header,
   Main,
-  Nav
-} from './component'
+
+} from './Component'
+import useScrollPosition from './utils/useScrollPosition'
 
 const App = () => {
+  const useScroll = useScrollPosition
+  console.log(useScroll)
+
   return (
     <>
-      <Header>
-        <Nav />
-      </Header>
+      <Header />
+
+
 
       <Main />
       <Footer />
