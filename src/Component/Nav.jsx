@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../Assets/Logo.png'
+import { motion as m } from 'framer-motion'
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { FaTiktok } from "react-icons/fa"
 import { navbarText } from '../utils/data'
@@ -16,7 +17,10 @@ const Nav = ({ toggleMenu, setToggleMenu }) => {
     <nav className=' max-w-[900px]  w-[90%] max-sm:w-[98%] flex mx-auto items-center justify-between'>
 
       <img className='  w-14' src={Logo} alt="Money Waste Logo" />
-      <h1 className='max-md:text-sm max-sm:hidden text-primary-100 uppercase'>Money Waste Clothing Co.</h1>
+      <m.h1 initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 3 }} className='max-md:text-sm max-sm:hidden text-primary-100 uppercase'>Money Waste Clothing Co.</m.h1>
       <ul className='max-md:text-sm flex  font-Lexend text-text-200 justify-between items-center w-[40%] max-sm:hidden'>
         {
           navbarText.map((navName, index) => (
@@ -32,7 +36,10 @@ const Nav = ({ toggleMenu, setToggleMenu }) => {
           <FaTiktok className='ml-2 max-md:m-0 ' />
         </a>
       </div>
-      <h1 className='sm:hidden  text-primary-100 uppercase'>Money Waste Clothing Co.</h1>
+      <m.h1 initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 3 }} className='sm:hidden  text-primary-100 uppercase'>Money Waste Clothing Co.</m.h1>
       {toggleMenu ? <RxCross1 onClick={toggle} size='38' className='sm:hidden mr-2 text-text-200 cursor-pointer' /> : <RxHamburgerMenu onClick={toggle} size='38' className='sm:hidden mr-2 text-text-200 cursor-pointer' />}
     </nav>
   )

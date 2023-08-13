@@ -3,25 +3,24 @@ import {
   Footer,
   Header,
   Main,
+  Messenger,
 } from './Component'
-import useScrollPosition from './utils/useScrollPosition'
+
+
 
 
 
 
 const App = () => {
-  const useScroll = useScrollPosition
-  console.log(useScroll)
+
 
   return (
     <>
+
       <Header />
-
-
-
       <Main />
       <Footer />
-
+      <Messenger />
     </>
   )
 }
