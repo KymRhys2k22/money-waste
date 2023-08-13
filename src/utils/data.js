@@ -46,7 +46,7 @@ export const picture = [
     {
 
         'id': 2,
-        'text': '',
+        'text': 'text-text-200',
         'bg': '',
         'left': '',
         'flexRow': '',
@@ -64,7 +64,7 @@ export const picture = [
     },
     {
         'id': 4,
-        'text': '',
+        'text': 'text-text-200',
         'bg': '',
         'left': '',
         'flexRow': '',
@@ -82,7 +82,7 @@ export const picture = [
     },
     {
         'id': 6,
-        'text': '',
+        'text': 'text-text-200',
         'bg': '',
         'left': '',
         'flexRow': '',
@@ -100,7 +100,7 @@ export const picture = [
     },
     {
         'id': 8,
-        'text': '',
+        'text': 'text-text-200',
         'bg': '',
         'left': '',
         'flexRow': '',
