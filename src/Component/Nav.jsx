@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Logo from '../Assets/Logo.png'
 import { motion as m } from 'framer-motion'
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { FaTiktok } from "react-icons/fa"
 import { navbarText } from '../utils/data'
 import useScrollPosition from '../utils/useScrollPosition';
+import Lottie from 'lottie-react';
+import HamBurgerMenu from '../Assets/hamburger-menu.json'
 
 
 const Nav = ({ toggleMenu, setToggleMenu }) => {
-  const toggle = () => {
-    setToggleMenu(!toggleMenu)
-  }
+  const hamRef = useRef(null)
+  useEffect(() => {
+    if (!toggleMenu) {
+
+      hamRef.current.setDirection(-1)
+      hamRef.current.play()
+
+    } else {
+
+
+      hamRef.current.setDirection(1)
+      hamRef.current.play()
+    }
+
+  }, [toggleMenu])
+
+
+
 
 
   return (
@@ -39,8 +56,17 @@ const Nav = ({ toggleMenu, setToggleMenu }) => {
       <m.h1 initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 1 }}
         viewport={{ once: true }}
-        transition={{ delay: 3 }} className='sm:hidden  text-primary-100 uppercase'>Money Waste Clothing Co.</m.h1>
-      {toggleMenu ? <RxCross1 onClick={toggle} size='38' className='sm:hidden mr-2 text-text-200 cursor-pointer' /> : <RxHamburgerMenu onClick={toggle} size='38' className='sm:hidden mr-2 text-text-200 cursor-pointer' />}
+        transition={{ delay: 3 }} className='sm:hidden  text-primary-100 uppercase'>Money Waste Clothing Co.
+      </m.h1>
+      <Lottie
+
+        lottieRef={hamRef}
+        animationData={HamBurgerMenu}
+        onClick={() => setToggleMenu(!toggleMenu)}
+        loop={false}
+        className='cursor-pointer w-9 sm:hidden mr-1'
+      />
+      {/* {toggleMenu ? <RxCross1 onClick={toggle} size='38' className='sm:hidden mr-2 text-text-200 cursor-pointer' /> : <RxHamburgerMenu onClick={toggle} size='38' className='sm:hidden mr-2 text-text-200 cursor-pointer' />} */}
     </nav>
   )
 }
