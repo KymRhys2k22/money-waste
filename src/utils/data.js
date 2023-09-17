@@ -24,7 +24,7 @@ export const navbarText = [
         'link': '#about'
     },
     {
-        'name': 'Contact',
+        'name': 'Contact us',
         'link': '#contact'
     },
 
