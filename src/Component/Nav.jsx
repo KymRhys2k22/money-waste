@@ -38,7 +38,7 @@ const Nav = ({ toggleMenu, setToggleMenu }) => {
         whileInView={{ opacity: 1, y: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 3 }} className='max-md:text-sm max-sm:hidden text-primary-100 uppercase'>Money Waste Clothing Co.</m.h1>
-      <ul className='max-md:text-sm flex  font-Lexend text-text-200 justify-between items-center w-[40%] max-sm:hidden'>
+      <ul className='max-md:text-sm flex  font-Lexend text-text-200 opacity-60 justify-between items-center w-[40%] max-sm:hidden'>
         {
           navbarText.map((navName, index) => (
             <li key={index} className='cta'>

@@ -78,7 +78,7 @@ export const picture = [
         'left': 'text-right',
         'flexRow': 'flex-row-reverse',
         'imageLink': img5,
-        'description': 'Wear the Attitude, Rock the Streets. Money Waste Clothing Co'
+        'description': 'Wear the Attitude, Rock the Streets. Money Waste Clothin'
     },
     {
         'id': 6,
