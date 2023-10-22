@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaFacebookMessenger } from 'react-icons/fa'
 import { motion as m } from 'framer-motion'
+import messenger from "../Assets/messenger.png"
 
 
 const Messenger = () => {
@@ -11,7 +12,7 @@ const Messenger = () => {
             transition={{ delay: 5 }}
             className='fixed max-sm:right-3  bottom-5 z-50 right-5'>
             <a href='https://www.m.me/100076257069294' target="_blank">
-                <FaFacebookMessenger size={50} className=' stroke-text-200 text-blue-500  hover:animate-pulse stroke-[10px] ' />
+                <img src={messenger} alt="messenger" width={60} />
             </a >
         </m.div>
     )

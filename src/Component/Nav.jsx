@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import Logo from '../Assets/Logo.png'
 import { motion as m } from 'framer-motion'
-import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+
 import { FaTiktok } from "react-icons/fa"
 import { navbarText } from '../utils/data'
-import useScrollPosition from '../utils/useScrollPosition';
+
 import Lottie from 'lottie-react';
 import HamBurgerMenu from '../Assets/hamburger-menu.json'
 
