@@ -5,7 +5,7 @@ import { motion as m } from 'framer-motion'
 const HeroSection = () => {
   return (
 
-    <section className='max-w-[900px] mx-auto w-[90%] max-sm:w-[97%]'>
+    <section className='max-w-[1080px] mx-auto w-[90%] max-sm:w-[97%]'>
 
       <ul className='flex flex-wrap'>
         {picture.map((pictures) =>
