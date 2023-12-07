@@ -31,7 +31,7 @@ const Nav = ({ toggleMenu, setToggleMenu }) => {
 
 
   return (
-    <nav className=' max-w-[900px]  w-[90%] max-sm:w-[98%] flex mx-auto items-center justify-between'>
+    <nav className=' max-w-[1080px]  w-[90%] max-sm:w-[98%] flex mx-auto items-center justify-between'>
 
       <img className='  w-14' src={Logo} alt="Money Waste Logo" />
       <m.h1 initial={{ opacity: 0, y: 100 }}
