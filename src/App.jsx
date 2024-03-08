@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Footer,
   Header,
@@ -12,16 +12,17 @@ import {
 
 
 const App = () => {
+  const [darkMode, setDarkMode] = useState(false)
 
 
   return (
-    <>
+    <div className={`${darkMode && "dark"}`}>
 
-      <Header />
+      <Header setDarkMode={setDarkMode} darkMode={darkMode} />
       <Main />
       <Footer />
       <Messenger />
-    </>
+    </div>
   )
 }
 
