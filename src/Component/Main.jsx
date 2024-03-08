@@ -7,7 +7,7 @@ const Main = () => {
 
   return (
 
-    <main className='w-full  bg-bg-300 pt-20'>
+    <main className='w-full  dark:bg-bg-300 pt-20'>
 
       <HeroSection />
     </main>

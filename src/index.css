@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,21 +8,21 @@
   :root {
     @apply scroll-smooth m-0;
   }
-  h1{
-    @apply font-Lexend font-bold
+  h1 {
+    @apply font-Lexend font-bold;
   }
-  h2{
-    @apply font-Lexend font-semibold
+  h2 {
+    @apply font-Lexend font-semibold;
   }
-  h3{
-    @apply font-Lexend font-medium
-  }
-
-  p{
-    @apply font-Lexend font-light
+  h3 {
+    @apply font-Lexend font-medium;
   }
 
-  .cta{
-    @apply transition ease-in-out delay-100 hover:-translate-y-0.5 hover:text-accent-100   
+  p {
+    @apply font-Lexend font-light;
+  }
+
+  * {
+    @apply transition-colors duration-500;
   }
 }
