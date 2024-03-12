@@ -1,34 +1,32 @@
 import React from 'react'
 import { picture } from '../utils/data'
-import { motion as m } from 'framer-motion'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper/modules'
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { useMediaQuery } from "@uidotdev/usehooks";
+
 
 const HeroSection = () => {
+  const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
+
+
   return (
 
     <section className='max-w-[1080px] mx-auto w-[90%] max-sm:w-[97%]'>
+      <Swiper spaceBetween={5} slidesPerView={isSmallDevice ? 1 : 3} pagination={true} modules={[Pagination]} autoplay={{ "delay": 5000, "reverseDirection": true }} navigation={true} className='w-full'>
+        {picture.map((pictures) => (
+          <SwiperSlide className="" key={pictures.id}>
 
-      <ul className='flex flex-wrap'>
-        {picture.map((pictures) =>
-        (
-          <li className={`${pictures.bg}`} key={pictures.id}>
-            <div className={`flex ${pictures.flexRow}  max-sm:flex-wrap max-md:flex-wrap max-md:justify-center `} >
-              <m.img initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: .7 }}
-                className='w-[50%] h-full max-sm:w-[100%] ' src={pictures.imageLink} alt={pictures.imageLink} />
-              <m.p initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 1 }}
-                className={` max-sm:text-lg max-sm:h-24 ${pictures.left} ${pictures.text} max-md:text-center  mx-5 text-5xl mt-5 font-black `}><i><q>{pictures.description}</q></i></m.p>
+            <img src={pictures.imageLink} className='block object-cover w-full h-full' />
 
-            </div>
 
-          </li>
-
+          </SwiperSlide>
         ))}
-      </ul>
+      </Swiper>
+
+
+
 
 
 
