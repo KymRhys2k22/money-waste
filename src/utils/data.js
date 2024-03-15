@@ -12,21 +12,17 @@ import img9 from '../Assets/mny (9).jpg'
 
 export const navbarText = [
     {
-        'name': 'Home',
+        'name': 'HOME',
         'link': '#home'
     },
     {
-        'name': 'Shop',
+        'name': 'SHOP',
         'link': '#shop'
     },
     {
-        'name': 'About',
+        'name': 'ABOUT',
         'link': '#about'
-    },
-    {
-        'name': 'Contact us',
-        'link': '#contact'
-    },
+    }
 
 ]
 
