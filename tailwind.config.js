@@ -7,6 +7,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-section': "url('/src/Assets/hero.svg')"
+      },
 
       keyframes: {
         slideIn: {

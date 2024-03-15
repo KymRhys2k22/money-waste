@@ -33,15 +33,15 @@ const Nav = ({ toggleMenu, setToggleMenu, darkMode, setDarkMode }) => {
 
 
   return (
-    <nav className=' max-w-[1080px]  w-[90%] max-sm:w-[98%] flex mx-auto items-center justify-between'>
+    <nav className=' max-w-[1216px]  w-[80%] max-sm:w-[98%] flex mx-auto items-center justify-between'>
 
       <img className='hover:cursor-pointer  w-14' src={Logo} alt="Money Waste Logo" />
 
       <m.h1 initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 1 }}
         viewport={{ once: true }}
-        transition={{ delay: 3 }} className='max-md:text-sm max-sm:hidden text-primary-100 uppercase'>Money Waste Clothing Co.</m.h1>
-      <ul role='list' className='max-md:text-sm flex  font-Lexend text-text-200 opacity-60 justify-between items-center w-[40%] max-sm:hidden'>
+        transition={{ delay: 3 }} className='max-md:text-sm text-xl max-sm:hidden text-primary-100 uppercase'>Money Waste Clothing Co.</m.h1>
+      <ul role='list' className='max-md:text-sm flex  font-Lexend text-text-200 opacity-60 justify-end items-center w-[40%] max-sm:hidden'>
         {
           navbarText.map((navName, index) => (
             <li key={index} className={`transition rounded-md py-3 px-2 w-24 text-center ${navName.name == "Contact us" && "text-sm"} focus:bg-slate-900 ease-in-out delay-100 hover:bg-slate-800 hover:text-yellow-200`}>
@@ -51,16 +51,13 @@ const Nav = ({ toggleMenu, setToggleMenu, darkMode, setDarkMode }) => {
         }
       </ul>
 
-      <div className='cta transition-colors duration-0  hover:text-text-200 hover:bg-transparent border-2 box-border font-bold bg-primary-200   text-center rounded-md text-[1vw] text-bg-300 px-[.5em] py-[.3em] max-sm:hidden '>
-        <a className='flex items-center' href="https://www.tiktok.com/@moneywasteclothing" target="_blank">
-          <h1 className='max-md:hidden'>Get yours now </h1>
-          <FaTiktok className='ml-2 max-md:m-0 ' />
-        </a>
-      </div>
+      <a href="https://www.tiktok.com/@moneywasteclothing" target="_blank" type='button' className='durations text-amber-400 hover:text-zinc-800 hover:bg-amber-400 border-2 box-border rounded-xl   text-[1vw]  border-amber-300 px-[.5em] py-[.3em] max-sm:hidden '>
+        <span className='max-md:hidden font-Lexend font-extralight' >Get yours now </span>
+      </a>
       <m.h1 initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 1 }}
         viewport={{ once: true }}
-        transition={{ delay: 3 }} className='sm:hidden  text-primary-100 uppercase'>Money Waste Clothing Co.
+        transition={{ delay: 3 }} className='sm:hidden text-primary-100 uppercase'>Money Waste Clothing Co.
       </m.h1>
       <Lottie
 
