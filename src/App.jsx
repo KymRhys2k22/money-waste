@@ -16,7 +16,7 @@ const App = () => {
 
 
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} `}>
 
       <Header setDarkMode={setDarkMode} darkMode={darkMode} />
       <Main />

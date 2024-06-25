@@ -26,7 +26,7 @@ const Nav = ({ toggleMenu, setToggleMenu, darkMode, setDarkMode }) => {
     }
 
   }, [toggleMenu])
-  console.log("dark", darkMode)
+
 
 
 

@@ -13,7 +13,7 @@ const Header = ({ setDarkMode, darkMode }) => {
         closed: { opacity: 0, x: "100%" },
     }
     return (
-        <header className='backdrop-filter backdrop-blur-sm bg-opacity-50 bg-neutral-950 w-full max-sm:py-3  lg:py-10 fixed z-50 '>
+        <header className='backdrop-filter backdrop-blur-sm bg-opacity-50 bg-black w-full max-sm:py-3  lg:py-10 fixed z-50 '>
             <Nav toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} setDarkMode={setDarkMode} darkMode={darkMode} />
             <m.div animate={toggleMenu ? "open" : "closed"} variants={variants} className='w-screen mt-2 h-screen fixed bg-bg-300 flex flex-col sm:hidden items-end pr-10 pt-10'>
                 <ul >

@@ -1,12 +1,20 @@
+import { fluidCorePlugins, fluidExtractor, defaultThemeFontSizeInRems, defaultThemeScreensInRems } from 'fluid-tailwind'
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: {
+
+    files: ["./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}"],
+    extract: fluidExtractor()
+
+  },
   darkMode: 'class',
   theme: {
+    fontSize: defaultThemeFontSizeInRems,
+    screens: defaultThemeScreensInRems,
     extend: {
+
       backgroundImage: {
         'hero-section': "url('/src/Assets/hero.svg')"
       },
@@ -49,6 +57,8 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    fluidCorePlugins
+  ],
 }
 
