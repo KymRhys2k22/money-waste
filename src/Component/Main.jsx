@@ -13,20 +13,19 @@ const Main = () => {
   return (
 
     <main className='w-full dark:bg-neutral-800  bg-gray-300'>
-      <section style={{ backgroundImage: `url(${hero})` }} className=' w-screen h-screen  bg-cover bg-center flex flex-col max-sm:pb-40 justify-end items-end lg:pb-44 lg:pr-64'>
-        <div className='text-right mr-10 max-sm:w-[218px] max-sm:h-[260px]   lg:w-[720px] lg:h-[360px] text-clip '>
-          <h2 className='max-sm:text-3xl lg:text-7xl text-stone-950 opacity-70 font-bold font-Lexend'>
-            Respect is a word.
-            Money is a tool.
-            Style is a mission.
-            Graffiti is a message.
-          </h2>
+      <section style={{ backgroundImage: `url(${hero})` }} className=' w-screen h-screen  bg-cover bg-center flex justify-end items-end   '>
 
-        </div>
-        <a type='button' className='mr-10 shadow-lg flex bg-amber-400 gap-3 border-2 py-[.7em] px-[3em] rounded-3xl text-center lg:hidden' href="https://www.m.me/100076257069294">
-          <span className='text-xl font-bold'>BUY NOW</span>
-          <FaShoppingCart size={24} />
-        </a>
+
+        <h2 className='leading-relaxed   mb-40  w-1/2 lg:w-96 lg:mb-28 text-start   ~mr-9/96 ~text-4xl/6xl text-stone-950 opacity-70 font-bold font-Lexend '>
+          Respect is a word
+          Money is a tool
+          Style is a mission
+          Graffiti is a message
+        </h2>
+
+
+
+
         {/* <img className='w-full h-full object-cover' src={hero} alt="" /> */}
 
       </section>
@@ -62,7 +61,7 @@ const Main = () => {
 
 
       {/* <HeroSection /> */}
-    </main>
+    </main >
   )
 }
 

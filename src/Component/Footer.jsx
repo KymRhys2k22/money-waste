@@ -4,6 +4,8 @@ const Footer = () => {
     return (
         <footer id='contact' className=''>
             Footer
+
+
         </footer>
     )
 }
